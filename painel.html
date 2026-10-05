@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel - Conecta ONG</title>
+    <link rel="stylesheet" href="painel.css">
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <h1>Conecta ONG</h1>
+            <p>Conectando pessoas e oportunidades</p>
+        </div>
+
+        <button onclick="sair()">Sair</button>
+    </header>
+
+    <main>
+
+        <section class="boas-vindas">
+            <h2>Bem-vindo ao Conecta ONG!</h2>
+            <p>Encontre oportunidades, cursos e formas de ajudar.</p>
+        </section>
+
+        <section class="cards">
+
+            <div class="card">
+                <h3>🤝 Voluntariado</h3>
+                <p>
+                    Encontre oportunidades para ajudar a ONG
+                    e contribuir com a comunidade.
+                </p>
+                <button>Ver oportunidades</button>
+            </div>
+
+            <div class="card">
+                <h3>🎓 Cursos</h3>
+                <p>
+                    Encontre cursos e capacitações para
+                    desenvolver novas habilidades.
+                </p>
+                <button>Ver cursos</button>
+            </div>
+
+            <div class="card">
+                <h3>💼 Empregos</h3>
+                <p>
+                    Consulte oportunidades de trabalho
+                    oferecidas pelos empregadores.
+                </p>
+                <button>Ver vagas</button>
+            </div>
+
+        </section>
+
+        <section class="sobre">
+            <h2>Como o Conecta ONG funciona?</h2>
+
+            <p>
+                A plataforma conecta ONGs, voluntários,
+                professores e empregadores em um único ambiente.
+                Dessa forma, pessoas podem encontrar oportunidades
+                de capacitação, voluntariado e trabalho.
+            </p>
+        </section>
+
+    </main>
+
+    <script>
+        function sair() {
+            localStorage.clear();
+            window.location.href = "index.html";
+        }
+    </script>
+
+</body>
+
+</html>

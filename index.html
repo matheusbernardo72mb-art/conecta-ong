@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conecta ONG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="logo">
+            <h1>Conecta ONG</h1>
+            <p>Conectando pessoas e oportunidades</p>
+        </div>
+
+        <div class="card">
+
+            <h2>Entrar na plataforma</h2>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="Digite seu e-mail">
+
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" placeholder="Digite sua senha">
+
+            <label for="tipo">Tipo de usuário</label>
+            <select id="tipo">
+                <option value="">Selecione</option>
+                <option value="voluntario">Voluntário</option>
+                <option value="professor">Professor</option>
+                <option value="empregador">Empregador</option>
+                <option value="ong">ONG</option>
+            </select>
+
+            <button onclick="entrar()">Entrar</button>
+
+            <p class="cadastro">
+                Ainda não possui cadastro?
+                <a href="#" onclick="cadastrar()">Cadastre-se</a>
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
